@@ -11,6 +11,7 @@ void main (){
    print('---');
   calTotal(55,60,0);
   calTotal(55,60,10);
+  coupun();
 }
 void categories(){
   Map<String,int>menu = {
@@ -40,4 +41,5 @@ void calTotal( int price,int qty,double discount){
   print('---');
 }
 void coupun(){
+  print('Coupon: = 0');
 }
