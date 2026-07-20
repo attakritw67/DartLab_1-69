@@ -21,9 +21,7 @@ abstract class MenuItem {
   MenuItem(this.name, this.basePrice) {
     itemCount++; 
   }
-
   double price();
-
   void show() {
     print("$name ${price()} บาท");
   }
@@ -61,7 +59,6 @@ class Food extends MenuItem {
     return basePrice * multiplier;
   }
 }
-
 class Wallet {
   double _balance = 0;
   double get balance => _balance;
@@ -73,7 +70,6 @@ class Wallet {
       _balance = value;
     }
   }
-
   bool pay(double amount) {
     if (_balance >= amount) {
       _balance -= amount;

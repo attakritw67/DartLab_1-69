@@ -19,7 +19,6 @@ Stream<String> trackOrder() async*{
 
   await Future.delayed(Duration(seconds: 1));
   print("สถานะ: จัดส่งเรียบร้อย");
-
   print("ติดตามสถานะเสร็จสิ้น");
 }
 void main() async {
@@ -33,7 +32,6 @@ void main() async {
     print("จบรายการ");
   }
   print("---");
-
   try{
     var order = await fetchOrder(0);
     print("ได้รับออร์เดอร์ : $order");

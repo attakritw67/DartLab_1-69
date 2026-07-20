@@ -39,10 +39,8 @@ void categories() {
 
 void calTotal(int price, int qty, double discount) {
   const double vat = 0.07;
-
   double total = (price * qty) * (1 + vat);
   double totalDis = ((price * qty) - discount) * (1 + vat);
-
   print('ยอดสุทธิ (ไม่มีส่วนลด): $total บาท');
   print('ยอดสุทธิ (ส่วนลด $discount บาท): $totalDis บาท');
   print('---');
