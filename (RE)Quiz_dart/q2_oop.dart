@@ -87,7 +87,9 @@ class Wallet {
 }
 
 void main() {
-  List<MenuItem> order = [Drink("ลาเต้ -", 55, 1),Food("ข้าวผัด -", 60, "L"),Drink("อเมริกาโน่ -", 45, 0)];
+  List<MenuItem> order = [Drink("ลาเต้ -", 55, 1),
+                          Food("ข้าวผัด -", 60, "L"),
+                          Drink("อเมริกาโน่ -", 45, 0)];
   double totalAmount = 0;
   for (var item in order) {
     item.show();
@@ -99,7 +101,7 @@ void main() {
   Wallet wallet = Wallet();
   wallet.balance = -50; 
   wallet.balance = 300; 
-  bool success1 = wallet.pay(totalAmount); // จ่าย 200 จาก 300
+  bool success1 = wallet.pay(totalAmount); 
   printStatus(success1 ? OrderStatus.paid : OrderStatus.pending);
   print("ยอดคงเหลือ: ${wallet.balance} บาท");
 

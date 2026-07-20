@@ -9,8 +9,7 @@ Future<Map<String , dynamic>> fetchOrder (int order) async {
     "menu" : "ลาเต้",
     "total" : 65.0
   };
-  }
-
+}
 Stream<String> trackOrder() async*{
   await Future.delayed(Duration(seconds: 1));
   print("สถานะ: รับออร์เดอร์แล้ว");
@@ -23,7 +22,6 @@ Stream<String> trackOrder() async*{
 
   print("ติดตามสถานะเสร็จสิ้น");
 }
-
 void main() async {
   print("เริ่มโหลดข้อมูล...");
   try{
@@ -45,11 +43,7 @@ void main() async {
     print("จบรายการ");
   }
   print("---");
-
   await for(String i in trackOrder()){
     print(i);
   }
-
-
-
 }

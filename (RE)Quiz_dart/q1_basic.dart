@@ -1,6 +1,6 @@
 void vatRate(){
   final double vat = 0.07;
-  print('อัตราภาษี (vatRate):$vat');
+  print('อัตราภาษี (vatRate): $vat');
 }
 void main (){
   final String shopName = 'Dart Cafe';
@@ -30,12 +30,11 @@ void categories(){
     if (k.value >= 50){
       print(k);
     }
-
   }
 }
 void calTotal( int price,int qty,double discount){
-  double total = (price*qty)*(1.07);
-  double total_dis = ((price*qty) -discount)*(1.07);
+  double total = (price*qty)*(1+0.07);
+  double total_dis = ((price*qty) -discount)*(1+0.07);
   print('ยอดสุทธิ (ไม่มีส่วนลด): $total บาท');
   print('ยอดสุทธิ (ส่วนลด$discount): $total_dis บาท');
   print('---');
