@@ -8,8 +8,7 @@ void main (){
   vatRate();
   print('---');
   categories();
-   print('---');
-  calTotal(55,60,0);
+  print('---');
   calTotal(55,60,10);
   coupun();
 }
@@ -25,12 +24,10 @@ void categories(){
   print('ราคาลาเต้: ${menu['ลาเต้']} บาท');
   print('---');
   print('เมนูราคาตั้งแต่ 50 บาทขึ้นไป');
-  print('---');
   for (var k in menu.entries){
     if (k.value >= 50){
-      print(k);
+      print({k.key});
     }
-
   }
 }
 void calTotal( int price,int qty,double discount){
